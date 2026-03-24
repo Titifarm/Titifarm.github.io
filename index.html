@@ -2,28 +2,76 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Titifarm - Chuyên cho thuê không gian (venue) xanh mát để tổ chức sự kiện ngoài trời, tiệc cưới, team building và workshop.">
-    <title>Titifarm - Cho thuê không gian sự kiện</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titifarm - Không Gian Sự Kiện & Cắm Trại</title>
     <style>
-        body { font-family: sans-serif; text-align: center; margin: 0; background-color: #f4f9f4; color: #333; }
-        header { background-color: #2e7d32; color: white; padding: 40px 20px; }
-        h1 { margin: 0; font-size: 36px; }
-        p { font-size: 18px; }
-        .khu-vuc-chinh { padding: 40px 20px; }
+        /* Cài đặt chung */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        h1, h2, h3 { color: #2e7d32; }
+        .container { width: 90%; max-width: 1100px; margin: auto; overflow: hidden; padding: 20px 0; }
+        
+        /* Mặt tiền (Hero Section) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1516939884455-1445c8652f83?q=80&w=1200') no-repeat center center/cover;
+            height: 80vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 { color: white; font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+        .btn { display: inline-block; padding: 12px 25px; background: #e67e22; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #d35400; }
+
+        /* Các không gian (Services) */
+        .services-grid { display: flex; gap: 20px; justify-content: space-between; flex-wrap: wrap; margin-top: 30px; }
+        .service-card { background: #f9f9f9; flex: 1; min-width: 300px; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .service-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+
+        /* Footer */
+        footer { background: #2e7d32; color: white; text-align: center; padding: 20px 0; margin-top: 40px; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>🌿 TITIFARM VENUE</h1>
-        <p>Không gian xanh mát cho sự kiện của bạn</p>
+    <header class="hero">
+        <h1>🌿 Titifarm Venue</h1>
+        <p>Không gian xanh mát lý tưởng cho tiệc ngoài trời, workshop & cắm trại</p>
+        <a href="#lien-he" class="btn">Nhận báo giá & Đặt chỗ</a>
     </header>
 
-    <div class="khu-vuc-chinh">
-        <h2>Chào mừng bạn đến với Titifarm!</h2>
-        <p>Chúng tôi đang cập nhật những hình ảnh đẹp nhất của nông trại.</p>
-        <p>Website sẽ sớm hoàn thiện để phục vụ bạn.</p>
+    <div class="container">
+        <h2 style="text-align: center;">Không gian tại Titifarm</h2>
+        <p style="text-align: center;">Chúng tôi cung cấp đa dạng các khu vực phù hợp với quy mô sự kiện của bạn.</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=500" alt="Tiệc ngoài trời">
+                <h3>Sân Cỏ Tổ Chức Tiệc</h3>
+                <p>Sức chứa 50 - 100 khách. Không gian mở cực chill, phù hợp tiệc cưới, sinh nhật, Gala Dinner.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=500" alt="Cắm trại">
+                <h3>Khu Glamping & BBQ</h3>
+                <p>Lều trại tiện nghi qua đêm kèm bếp nướng BBQ. Phù hợp cho nhóm bạn và gia đình nhỏ.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=500" alt="Workshop">
+                <h3>Không Gian Workshop</h3>
+                <p>Khu vực có mái che, bàn ghế setup sẵn, đầy đủ điện nước. Lý tưởng cho các lớp học kỹ năng.</p>
+            </div>
+        </div>
     </div>
+
+    <footer id="lien-he">
+        <h2>Titifarm</h2>
+        <p>📍 Địa chỉ: [450 Trần Thị Hơn, Nhị Bình, Hóc Môn, Hồ Chí Minh]</p>
+        <p>📞 Hotline/Zalo: 0367 803 213</p>
+        <p>© 2026 Titifarm. Thiết kế bởi bạn.</p>
+    </footer>
 
 </body>
 </html>
